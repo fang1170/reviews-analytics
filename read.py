@@ -28,3 +28,6 @@ for d in data:
 		good.append(d)
 print('一共有', len(good), '筆留言提到good')
 print(good[0])
+
+bad = [d for d in data if 'bad' in d]   #快寫法 把有bad的留言裝進清單中
+print(bad)
